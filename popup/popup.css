@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light dark;
+  font: 13px/1.4 system-ui, sans-serif;
+}
+body {
+  width: 260px;
+  margin: 0;
+  padding: 14px;
+  background: Canvas;
+  color: CanvasText;
+}
+h1 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+#notice {
+  margin: 0 0 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #b4530933;
+  border-left: 3px solid #d97706;
+}
+#notice button {
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#meta {
+  margin: 0 0 10px;
+  opacity: 0.75;
+  overflow-wrap: anywhere;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+button {
+  font: inherit;
+  padding: 7px 8px;
+  border: 1px solid #8884;
+  border-radius: 6px;
+  background: #8881;
+  color: inherit;
+  cursor: pointer;
+}
+button:hover:not(:disabled) {
+  background: #8883;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+#clear {
+  width: 100%;
+  margin-top: 6px;
+  padding: 5px 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+button.wide {
+  grid-column: 1 / -1;
+}
+#status {
+  min-height: 1em;
+  margin: 8px 0 0;
+  font-size: 12px;
+  opacity: 0.75;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>ConvoPort</h1>
+    <p id="notice" hidden>
+      Claude is rate-limiting you. Fork now to keep the context.
+      <button id="dismissNotice" aria-label="Dismiss">×</button>
+    </p>
+    <p id="meta">Loading…</p>
+    <div class="grid">
+      <button data-dest="copy" class="wide">Copy as Text</button>
+      <button data-dest="chatgpt">ChatGPT</button>
+      <button data-dest="gemini">Gemini</button>
+      <button data-dest="deepseek">DeepSeek</button>
+    </div>
+    <button id="clear" hidden>Clear cached chat</button>
+    <p id="status" role="status"></p>
+    <script src="../lib/destinations.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
